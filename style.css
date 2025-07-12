@@ -461,3 +461,38 @@ html{
 .social-card .fa-phone {
   color: #34af23;
 }
+@media (max-width: 1024px) {
+  .skill-card {
+    width: 160px;
+    padding: 15px 20px;
+  }
+  .social-card {
+    width: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tech-stack h2,
+  .contact h2 {
+    font-size: 2rem;
+  }
+  .skill-card {
+    width: 140px;
+    padding: 15px;
+  }
+  .social-card {
+    width: 160px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-stack,
+  .contact {
+    padding: 40px 5%;
+  }
+  .skill-card,
+  .social-card {
+    width: 100%;
+  }
+}
