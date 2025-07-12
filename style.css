@@ -226,12 +226,13 @@ html{
 .about-photo img:hover {
   transform: scale(1.1);
 }
-.tech-stack{
-    padding: 60px 10%;
-    background-color: #050a30;
-    color: white;
-    text-align: center;
+.tech-stack {
+  padding: 60px 10%;
+  background-color: #050a30;
+  color: white;
+  text-align: center;
 }
+
 .tech-stack h2 {
   font-size: 2.5rem;
   margin-bottom: 40px;
@@ -241,49 +242,73 @@ html{
 }
 
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   justify-content: center;
-  padding: 0 10px;
-  max-width: 1000px;
-  margin: auto;
 }
 
 .skill-card {
-  background-color: #050a30;
-  color: rgb(230, 230, 245);
+  background-color: #0a113d;
   border-radius: 12px;
+  padding: 20px 30px;
+  width: 180px;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  font-size: 2rem;
-  padding: 20px;
-  transition: all 0.4s ease;
-  box-shadow: 0 0 15px rgba(0, 255, 191, 0.15);
-  height: 150px;
-}
-
-.skill-card i {
-  margin-bottom: 10px;
-  transition: transform 0.3s ease;
-}
-
-.skill-card span {
-  font-size: 1rem;
-  font-weight: 500;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-card:hover {
   transform: scale(1.05);
-  background: linear-gradient(135deg, rgb(0, 153, 255), rgb(0, 255, 191));
-  color: #050a30;
+  box-shadow: 0 0 15px rgba(0, 255, 191, 0.5);
 }
 
-.skill-card:hover i {
-  transform: scale(1.3);
+.skill-card i,
+.skill-card img.skill-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 3rem;
+  text-align: center;
 }
+
+.skill-card span {
+  font-size: 1rem;
+  color: #a9b3d2;
+  text-align: center;
+}
+
+.skill-card .fa-html5 {
+  color: #e34f26;
+}
+.skill-card .fa-css3-alt {
+  color: #1572B6;
+}
+.skill-card .fa-js-square {
+  color: #f7df1e;
+}
+.skill-card .fa-react {
+  color: #61DBFB;
+}
+.skill-card .fa-git-alt {
+  color: #f1502f;
+}
+.skill-card .fa-github {
+  color: #333;
+}
+.skill-card .fa-code {
+  color: #5cacee;
+}
+.skill-card .fa-file-word {
+  color: #2b579a;
+}
+
+
+
 .projects {
   padding: 60px 10%;
   background-color: #050a30;
@@ -356,4 +381,83 @@ html{
 .project-card .btn:hover {
   transform: scale(1.1);
 }
+.contact {
+  padding: 60px 10%;
+  background-color: #050a30;
+  color: white;
+  text-align: center;
+}
 
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  background: linear-gradient(90deg, rgb(0, 153, 255), rgb(0, 255, 191));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.social-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-top: 20px;
+}
+
+.social-card {
+  background-color: #0a113d;
+  padding: 20px 25px;
+  border-radius: 12px;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 255, 191, 0.5);
+}
+
+.social-card i {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.social-card span {
+  display: block;
+  font-size: 1rem;
+  margin-top: 5px;
+  color: #a9b3d2;
+}
+
+.social-card a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  display: block;
+  margin-top: 8px;
+  transition: color 0.3s ease;
+}
+
+.social-card a:hover {
+  color: rgb(0, 255, 191);
+}
+
+/* Brand Colors */
+.social-card .fa-envelope {
+  color: #D44638;
+}
+.social-card .fa-instagram {
+  color: #C13584;
+}
+.social-card .fa-github {
+  color: #333;
+}
+.social-card .fa-linkedin {
+  color: #0077b5;
+}
+.social-card .fa-phone {
+  color: #34af23;
+}
