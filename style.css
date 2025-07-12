@@ -1,0 +1,359 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #050a30;
+  color: rgb(240, 240, 245);
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #060c33;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(240, 240, 245);
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: rgb(0, 199, 255);
+  transform: scale(1.05);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li a {
+  color: rgb(200, 200, 215);
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: rgb(0, 199, 255);
+  transform: scale(1.05);
+  display: inline-block;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10%;
+  flex-wrap: wrap;
+  background: #050a30;
+}
+
+.hero-text {
+  flex: 1 1 50%;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.2;
+  transition: color 0.3s ease;
+}
+
+.hero-text h1 span {
+  background: linear-gradient(90deg, rgb(0, 153, 255), rgb(0, 255, 191));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-text .name {
+  background: linear-gradient(90deg, rgb(255, 165, 0), rgb(255, 105, 180));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-text h2 {
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: rgb(180, 180, 190);
+  transition: color 0.3s ease;
+}
+
+.hero-text h2:hover {
+  color: rgb(0, 199, 255);
+  transform: scale(1.05);
+}
+
+.hero-buttons {
+  margin-top: 30px;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  margin-right: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.primary-btn {
+  background: linear-gradient(90deg, rgb(0, 153, 255), rgb(0, 255, 191));
+  color: #fff;
+}
+
+.primary-btn:hover {
+  background: linear-gradient(90deg, rgb(0, 255, 191), rgb(0, 153, 255));
+  color: #050a30;
+  transform: scale(1.05);
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 1px solid rgb(0, 153, 255);
+  color: rgb(0, 153, 255);
+}
+
+.secondary-btn:hover {
+  background: rgb(0, 153, 255);
+  color: #050a30;
+  transform: scale(1.05);
+}
+
+.hero-img {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.hero-img img {
+  max-width: 400px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 255, 191, 0.3); 
+  transition: transform 0.4s ease;
+}
+.hero-img img:hover {
+  transform: scale(1.08);
+  
+}
+.about {
+  padding: 80px 10%;
+  background-color: #050a30;
+  color: rgb(240, 240, 245);
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-text {
+  flex: 1 1 55%;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, rgb(0, 153, 255), rgb(0, 255, 191));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.about-text p:hover {
+  transform: scale(1.03);
+}
+
+.stats {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.stats li {
+  background-color: #060c33;
+  padding: 15px 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.stats li:hover {
+  transform: scale(1.05);
+  background: rgb(0, 153, 255);
+  color: #050a30;
+}
+.about-text h2 {
+    text-align: center;
+}
+
+.about-photo {
+  flex: 1 1 35%;
+  text-align: center;
+}
+
+.about-photo img {
+  max-width: 350px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 255, 191, 0.3);
+  transition: transform 0.4s ease;
+}
+
+.about-photo img:hover {
+  transform: scale(1.1);
+}
+.tech-stack{
+    padding: 60px 10%;
+    background-color: #050a30;
+    color: white;
+    text-align: center;
+}
+.tech-stack h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  background: linear-gradient(90deg, rgb(0, 153, 255), rgb(0, 255, 191));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  justify-content: center;
+  padding: 0 10px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.skill-card {
+  background-color: #050a30;
+  color: rgb(230, 230, 245);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  padding: 20px;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 15px rgba(0, 255, 191, 0.15);
+  height: 150px;
+}
+
+.skill-card i {
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.skill-card span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, rgb(0, 153, 255), rgb(0, 255, 191));
+  color: #050a30;
+}
+
+.skill-card:hover i {
+  transform: scale(1.3);
+}
+.projects {
+  padding: 60px 10%;
+  background-color: #050a30;
+  color: white;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  background: linear-gradient(90deg, rgb(0, 153, 255), rgb(0, 255, 191));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.projects-grid {
+   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  justify-content: center;
+  padding: 0 10px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.project-card {
+  background: #060c33;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 255, 191, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.project-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  margin: 10px 0;
+  color: rgb(255, 255, 255);
+  font-size: 1.25rem;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  color: rgb(220, 220, 240);
+}
+
+.project-card .btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, rgb(0, 153, 255), rgb(0, 255, 191));
+  color: #050a30;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card .btn:hover {
+  transform: scale(1.1);
+}
+
