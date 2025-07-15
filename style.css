@@ -23,12 +23,12 @@ html{
   font-size: 1.5rem;
   font-weight: 600;
   color: rgb(240, 240, 245);
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .logo:hover {
   color: rgb(0, 199, 255);
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 .navbar ul {
@@ -84,18 +84,20 @@ html{
   -webkit-text-fill-color: transparent;
 }
 
-.hero-text h2 {
+.developer {
   font-weight: 300;
   font-size: 1.5rem;
   margin-top: 10px;
   color: rgb(180, 180, 190);
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block; 
 }
 
-.hero-text h2:hover {
+.developer:hover {
   color: rgb(0, 199, 255);
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
+
 
 .hero-buttons {
   margin-top: 30px;
@@ -460,39 +462,4 @@ html{
 }
 .social-card .fa-phone {
   color: #34af23;
-}
-@media (max-width: 1024px) {
-  .skill-card {
-    width: 160px;
-    padding: 15px 20px;
-  }
-  .social-card {
-    width: 180px;
-  }
-}
-
-@media (max-width: 768px) {
-  .tech-stack h2,
-  .contact h2 {
-    font-size: 2rem;
-  }
-  .skill-card {
-    width: 140px;
-    padding: 15px;
-  }
-  .social-card {
-    width: 160px;
-    padding: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .tech-stack,
-  .contact {
-    padding: 40px 5%;
-  }
-  .skill-card,
-  .social-card {
-    width: 100%;
-  }
 }
