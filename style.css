@@ -351,6 +351,7 @@ html{
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 15px;
+   object-fit: cover;  
 }
 
 .project-card h3 {
