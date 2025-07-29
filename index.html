@@ -8,19 +8,25 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
     <header class="header">
         <div class="logo">Akash Kumar Gupta</div>
         <nav class="navbar">
-            <ul>
+            <ul id="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
@@ -28,11 +34,11 @@
     <section class="hero" id="home">
         <div class="hero-text">
             <h1>Hello<span>.</span><br>I'm <span class="name">Akash Kumar Gupta</span></h1>
-             <span class="developer">Web Developer</span>
-           
+            <span class="developer">Web Developer</span>
+
             <div class="hero-buttons">
-               <a href="Contact.html"><button class="primary-btn">Got a project?</button></a>
-                <a href="Akash_Resume_(1).pdf" download><button class="secondary-btn" >My resume</button></a>
+                <a href="Contact.html"><button class="primary-btn">Got a project?</button></a>
+                <a href="Akash_Resume_(1).pdf" download><button class="secondary-btn">My resume</button></a>
             </div>
         </div>
         <div class="hero-img">
@@ -86,7 +92,7 @@
 
             <!-- Tools Using Custom SVG or Image Icons -->
             <div class="skill-card">
-                <img src="canva.png" alt="Canva Logo" class="skill-img" style="border-radius: 50%;"/>
+                <img src="canva.png" alt="Canva Logo" class="skill-img" style="border-radius: 50%;" />
                 <span>Canva</span>
             </div>
 
@@ -148,7 +154,7 @@
                 <a href="#" class="btn">View Project</a>
 
             </div>
-            
+
             <div class="project-card">
                 <img src="images/project6.jpg" alt="Project Six">
                 <h3>Project Six</h3>
@@ -191,7 +197,7 @@
                     target="_blank">Akash Kumar Gupta</a>
             </div>
 
-           </div>
+        </div>
 
         </div>
 
